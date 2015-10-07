@@ -1,3 +1,8 @@
+Welcome to Gary & Amalia's Wedding website!
+
+Details TBD
+This is my first independent project.
+
 == README
 
 This README would normally document whatever steps are necessary to get the
