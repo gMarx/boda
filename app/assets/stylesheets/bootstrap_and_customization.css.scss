@@ -1,1 +1,7 @@
-@import 'bootstrap'
+@import 'bootstrap';
+
+.well {
+	background-color: rgba(255, 204, 0, 0.4);
+	/*minion yellow: pantone #ffcc00*/
+	border-color: #39879E;
+}
