@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # get 'pages/navigation'
+  get "navigation" => "pages#navigation"
+
   root 'pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
