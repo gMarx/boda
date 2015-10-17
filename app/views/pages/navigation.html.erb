@@ -1,35 +1,27 @@
 <div class="page-header text-center container">
-  
+
   <div class="well">
-  	<div class="page-header">
-  		<p class="text-primary">27 March 2016</p>
-  		<h1>Amàlia and Gary</h1>
-  		<p class="text-primary">¡nos casamos!</p>
-		</div>
-	
-	
+    <%= render 'layouts/header' %>
 
-		<div class="">
-		  	<div class="row">
-		  		<div class="pull-left col-xs-12 col-md-6">
-		  			<h1>Stuff</h1>
-		  			<%= link_to "home",  root_path %>
-		  			<%= link_to "Navigation",  navigation_path %>
-		  		</div>
-					<div class="pull-right col-xs-12 col-md-6">
-						<h1>Stuff 2</h1>
-						<%= link_to "Navigation",  navigation_path %>
-						<%= link_to "Navigation",  navigation_path %>
-					</div>
-		  		
-		  		<!-- <div class="hidden-xs col-md-4">
-		  		</div> -->
-					<div class="col-xs-12 col-md-12">
-<!-- 						<p>As Amàlia and Gary formally begin a life together, we invite our community of family and friends to participate and welcome us into the next chapter of our lives together.</p> -->
-						<p class="text-primary">Come welcome us into the next chapter of our lives together.</p>
+    <div class="row">
+      <div class="pull-left col-xs-12 col-md-6">
+        <h1>Stuff</h1>
+        <%= link_to "home",  root_path %><br/>
+        <%= link_to "location",  location_path %>
+      </div>
+      <div class="pull-right col-xs-12 col-md-6">
+        <h1>Stuff 2</h1>
+        <%= link_to "About Us",  about_path %><br/>
+        <%= link_to "Wedding Day",  wedding_path %>
+      </div>
 
-					</div>
-				</div>	
-			</div>
-		</div>
+      <!-- <div class="hidden-xs col-md-4">
+      </div> -->
+      <div class="col-xs-12 col-md-12">
+<!--            <p>As Amàlia and Gary formally begin a life together, we invite our community of family and friends to participate and welcome us into the next chapter of our lives together.</p> -->
+        <p class="text-primary">Come welcome us into the next chapter of our lives together.</p>
+
+      </div>
+    </div>
+  </div>
 </div>

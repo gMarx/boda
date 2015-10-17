@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
+  get 'pages/wedding'
+
+  get 'pages/about'
+
+  get 'pages/location'
+
   # get 'pages/navigation'
   get "navigation" => "pages#navigation"
+  get "location" => "pages#location"
+  get "about" => "pages#about"
+  get "wedding" => "pages#wedding"
 
   root 'pages#home'
 
