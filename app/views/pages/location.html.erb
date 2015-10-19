@@ -1,3 +1,6 @@
+<script src="//maps.google.com/maps/api/js?v=3.13&amp;sensor=false&amp;libraries=geometry" type="text/javascript"></script>
+<script src='//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js' type='text/javascript'></script>
+
 <div class="page-header text-center container">
 
   <div class="well">
@@ -15,5 +18,27 @@
       <p>From Oakland I-580</p>
       <p>From Elsewhere</p>
     </div>
+    <div class="row container">
+      <div id="map" class="pull-right col-xs-4" style='width: 600px; height: 300px;'>
+      </div>
+    </div>
   </div>
 </div>
+<% @users.each do |user| %>
+  <% user.latitude %>
+  <% user.longitude %>
+  <% user.address %>
+  <% user.description %>
+  <% user.title %>
+<% end %>
+
+
+
+<script type="text/javascript">
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers(<%=raw @hash.to_json %>);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  });
+</script>

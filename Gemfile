@@ -23,6 +23,13 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+
+# googlemaps API tutorial
+# https://www.youtube.com/watch?v=R0l-7en3dUw&feature=youtu.be
+gem 'geocoder'
+gem 'gmaps4rails'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
