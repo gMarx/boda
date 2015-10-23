@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # get 'pages/location'
   # # get 'pages/navigation'
   get "about" => "pages#about"
-  get "accomodations" => "pages#accomodations"
+  get "accommodations" => "pages#accommodations"
   get "location" => "pages#location"
   get "navigation" => "pages#navigation"
   get "wedding" => "pages#wedding"

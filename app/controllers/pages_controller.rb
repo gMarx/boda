@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
   def about
   end
-  def accomodations
+  def accommodations
   end
 
   def navigation

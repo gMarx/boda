@@ -1,56 +1,8 @@
 <div class="row">
   <div class="nav nav-pills text-center">
-    <% if current_page?(root_path) %>
-    <!-- @home = true -->
-      <%= link_to "Welcome", welcome_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Our Story", about_path, class: "btn navbar-btn btn-info" %>
-      <%= link_to "Wedding Day",  wedding_path, class: "btn btn-info" %>
-      <%= link_to "Accomodations", accomodations_path, class: "btn navbar-btn btn-info" %>
-      <%= link_to "Location", location_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Gift Registry", registry_path, class: "btn navbar-btn btn-info"%>
-    <% elsif current_page?(welcome_path) %>
-    <!-- @welcome = true -->
-      <%= link_to "Home", root_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Our Story", about_path, class: "btn navbar-btn btn-info" %>
-      <%= link_to "Wedding Day",  wedding_path, class: "btn btn-info" %>
-      <%= link_to "Accomodations", accomodations_path, class: "btn navbar-btn btn-info" %>
-      <%= link_to "Location", location_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Gift Registry", registry_path, class: "btn navbar-btn btn-info"%>
-    <% elsif current_page? about_path %>
-      <%= link_to "Home", root_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Welcome", welcome_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Wedding Day",  wedding_path, class: "btn btn-info" %>
-      <%= link_to "Accomodations", accomodations_path, class: "btn navbar-btn btn-info" %>
-      <%= link_to "Location", location_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Gift Registry", registry_path, class: "btn navbar-btn btn-info"%>
-    <% elsif current_page? location_path %>
-      <%= link_to "Home", root_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Welcome", welcome_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Our Story", about_path, class: "btn navbar-btn btn-info" %>
-      <%= link_to "Wedding Day",  wedding_path, class: "btn btn-info" %>
-      <%= link_to "Accomodations", accomodations_path, class: "btn navbar-btn btn-info" %>
-      <%= link_to "Gift Registry", registry_path, class: "btn navbar-btn btn-info"%>
-    <% elsif current_page? wedding_path %>
-      <%= link_to "Home", root_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Welcome", welcome_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Our Story", about_path, class: "btn navbar-btn btn-info" %>
-      <%= link_to "Accomodations", accomodations_path, class: "btn navbar-btn btn-info" %>
-      <%= link_to "Location", location_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Gift Registry", registry_path, class: "btn navbar-btn btn-info"%>
-    <% elsif current_page? registry_path %>
-      <%= link_to "Home", root_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Welcome", welcome_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Our Story", about_path, class: "btn navbar-btn btn-info" %>
-      <%= link_to "Wedding Day",  wedding_path, class: "btn btn-info" %>
-      <%= link_to "Accomodations", accomodations_path, class: "btn navbar-btn btn-info" %>
-      <%= link_to "Location", location_path, class: "btn navbar-btn btn-info"%>
-    <% else %>
-      <%= link_to "Home", root_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Welcome", welcome_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Our Story", about_path, class: "btn navbar-btn btn-info" %>
-      <%= link_to "Wedding Day",  wedding_path, class: "btn btn-info" %>
-      <%= link_to "Location", location_path, class: "btn navbar-btn btn-info"%>
-      <%= link_to "Gift Registry", registry_path, class: "btn navbar-btn btn-info"%>
+    <% nav_links.each do |link| %>
+      <% next if current_page? link[:path] %>
+      <%= link_to link[:text], link[:path], class: "btn navbar-btn btn-info" %>
     <% end %>
   </div>
 </div>
