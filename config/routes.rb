@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  # get 'pages/registry'
   # get 'pages/accomodations'
   # get 'pages/welcome'
   resources :users
@@ -12,6 +13,7 @@ Rails.application.routes.draw do
   get "navigation" => "pages#navigation"
   get "wedding" => "pages#wedding"
   get "welcome" => "pages#welcome"
+  get "registry" => "pages#registry"
 
 
   root 'pages#home'
