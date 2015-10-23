@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # get 'pages/registry'
   # get 'pages/accomodations'
   # get 'pages/welcome'

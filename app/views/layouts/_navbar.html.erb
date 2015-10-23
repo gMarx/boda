@@ -7,5 +7,8 @@
         <%= link_to link[:text], link[:path], class: "btn navbar-btn btn-info" %>
       <% end %>
     <% end %>
+    <% if user_signed_in? %>
+      <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+    <% end %>
   </div>
 </div>
