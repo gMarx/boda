@@ -1,16 +1,18 @@
 Rails.application.routes.draw do
+  # get 'pages/accomodations'
+  # get 'pages/welcome'
   resources :users
-  get 'pages/wedding'
-
-  get 'pages/about'
-
-  get 'pages/location'
-
-  # get 'pages/navigation'
-  get "navigation" => "pages#navigation"
-  get "location" => "pages#location"
+  # get 'pages/wedding'
+  # get 'pages/about'
+  # get 'pages/location'
+  # # get 'pages/navigation'
   get "about" => "pages#about"
+  get "accomodations" => "pages#accomodations"
+  get "location" => "pages#location"
+  get "navigation" => "pages#navigation"
   get "wedding" => "pages#wedding"
+  get "welcome" => "pages#welcome"
+
 
   root 'pages#home'
 
