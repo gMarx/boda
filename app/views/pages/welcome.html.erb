@@ -1,17 +1,7 @@
 <div class="page-header text-center container">
-
   <div class="well">
-  <%= link_to "home",  root_path, class: "btn btn-link pull-left", type: "button" %>
     <%= render 'layouts/header' %>
-
-    <div class="row">
-      <div class="nav nav-pills text-center">
-        <%= link_to "Home", root_path, class: "btn navbar-btn btn-info"%>
-        <%= link_to "Our Story", about_path, class: "btn navbar-btn btn-info" %>
-        <!-- need to create an 'Accomodations' page and set the path -->
-        <%= link_to "Accomodations", location_path, class: "btn navbar-btn btn-info" %>
-      </div>
-    </div>
-        <p class="text-primary">Come welcome us into the next chapter of our lives together.</p>
+    <%= render 'layouts/navbar' %>
+    <p class="text-primary">Come welcome us into the next chapter of our lives together.</p>
   </div>
 </div>

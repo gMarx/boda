@@ -1,6 +1,12 @@
 class PagesController < ApplicationController
   def home
   end
+  def welcome
+  end
+  def about
+  end
+  def accomodations
+  end
 
   def navigation
   end
@@ -13,9 +19,6 @@ class PagesController < ApplicationController
       marker.lat user.latitude
       marker.lng user.longitude
     end
-  end
-
-  def about
   end
 
   def wedding

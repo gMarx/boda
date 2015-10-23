@@ -1,23 +1,11 @@
-
 <div class="page-header text-center container">
-
   <div class="well">
     <%= render 'layouts/header' %>
-
+    <%= render 'layouts/navbar' %>
     <div class="row">
-      <div class="nav nav-pills text-center">
-        <!-- need to change 'navigation_path' to a welcome page -->
-        <%= link_to "Welcome", welcome_path, class: "btn navbar-btn btn-info"%>
-        <%= link_to "Our Story", about_path, class: "btn navbar-btn btn-info" %>
-        <!-- need to create an 'Accomodations' page and set the path -->
-        <%= link_to "Accomodations", location_path, class: "btn navbar-btn btn-info" %>
-      </div>
       <div class="hidden-xs col-md-4">
       </div>
       <div class="col-xs-12 col-md-4">
-        <!-- <h3>Bienvenido</h3> -->
-        <!--<%= image_tag "Amalia&Gary_037_c.png", class: "img-circle img-responsive center-block" %>
-        <%= link_to "Navigation",  navigation_path %> -->
         <%= link_to image_tag("Amalia&Gary_037_c.png", class: "img-circle img-responsive center-block"), navigation_path %>
         <p class="text-primary">¡nos casamos!</p>
         <%= link_to "Wedding Day",  wedding_path, class: "btn btn-info" %>
