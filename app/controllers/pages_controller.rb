@@ -12,12 +12,12 @@ class PagesController < ApplicationController
   end
 
   def location
-    # need to add reference to index method on users_controller.rb
-    #  to have @users available on the page
-    @users = User.all
-    @hash = Gmaps4rails.build_markers(@users) do |user, marker|
-      marker.lat user.latitude
-      marker.lng user.longitude
+    # need to add reference to index method on places_controller.rb
+    #  to have @places available on the page
+    @places = Place.all
+    @hash = Gmaps4rails.build_markers(@places) do |place, marker|
+      marker.lat place.latitude
+      marker.lng place.longitude
     end
   end
 
