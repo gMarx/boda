@@ -12,11 +12,14 @@ body {
 	/*minion yellow: pantone #ffcc00*/
 	border-color: rgba(191, 173, 152, 0.4);
 	/* un azul que me gusta #39879E;*/
-
+  p {
+    font-family: Scriptina;
+  }
 }
 .text-primary {
 	color: #1719A2;
 	font-size: 18px;
+  font-family: Scriptina;
 	/*text color -- for sub headings*/
 }
 
