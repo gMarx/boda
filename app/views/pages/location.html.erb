@@ -68,21 +68,25 @@
     </div> -->
   </div>
 </div>
-# <% @places.each do |place| %>
-#   <% place.latitude %>
-#   <% place.longitude %>
-#   <% place.address %>
-#   <% place.description %>
-#   <% place.title %>
-# <% end %>
+
+<!--
+ <%# @places.each do |place| %>
+   <%# place.latitude %>
+   <%# place.longitude %>
+   <%# place.address %>
+   <%# place.description %>
+   <%# place.title %>
+ <%# end %>
 
 
 
-# <script type="text/javascript">
-#   handler = Gmaps.build('Google');
-#   handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-#     markers = handler.addMarkers(<%=raw @hash.to_json %>);
-#     handler.bounds.extendWith(markers);
-#     handler.fitMapToBounds();
-#   });
-# </script>
+
+<script type="text/javascript">
+   handler = Gmaps.build('Google');
+   handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+     markers = handler.addMarkers(<%=raw @hash.to_json %>);
+     handler.bounds.extendWith(markers);
+     handler.fitMapToBounds();
+   });
+ </script>
+-->
