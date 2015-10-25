@@ -1,0 +1,26 @@
+//media quieries for all devices
+
+@media (max-width: 568px) {
+  body {
+    font-size: 10px;
+  }
+  h1 {
+    font-size:15vw;
+  }
+  .text-primary {
+    font-size:10vw;
+  }
+  p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+}
+@media (min-width: 569px) and (max-width: 768px) {
+
+}
+@media (min-width: 769px) and (max-width: 992px) {
+}
+@media (min-width: 993px) {
+}
