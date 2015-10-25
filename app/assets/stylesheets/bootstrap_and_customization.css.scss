@@ -38,3 +38,16 @@ body {
   max-height: 100px;
   max-width: 400px;
 }
+
+@font-face {
+  font-family: 'Scriptina';
+  src: font-url('scriptina.ttf');
+}
+@font-face {
+  font-family: 'Eutemia';
+  src: font-url('Eutemia.ttf');
+}
+
+.fancy-font {
+  font-family: 'Scriptina';
+}
