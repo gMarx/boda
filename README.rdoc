@@ -3,6 +3,10 @@ Welcome to Gary & Amalia's Wedding website!
 Details TBD
 This is my first independent project.
 
+Added Asset pipeline for fonts as described here:
+https://gist.github.com/anotheruiguy/7379570
+
+
 == README
 
 This README would normally document whatever steps are necessary to get the

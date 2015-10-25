@@ -25,5 +25,12 @@ module Wedding
 
     # required for Heroku
     config.assets.initialize_on_precompile = false
+
+    # required for added fonts with Asset Pipeline
+
+    config.assets.enabled = true
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    config.assets.precompile += %w( .svg .eot .woff .ttf)
+
   end
 end
