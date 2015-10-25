@@ -43,3 +43,7 @@
   font-family: 'Eutemia';
   src: url('/assets/Eutemia.ttf');
 }
+
+.fancy-font {
+  font-family: 'Scriptina';
+}
