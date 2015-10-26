@@ -28,12 +28,12 @@
         </div>
         <div>
           <% @gifts.each do |gift| %>
-              //show a gift using html elements
+              <!-- show a gift using html elements -->
               <%= link_to gift.name, gift.url %>
             <% if !gift.purchased? %>
 
               <%= form_for gift do |f| %>
-                <%= f.text_field :purchased, :as => :hidden, :input_html => { :value => "true"} %>
+                <!-- %= f.text_field :purchased, :as => :hidden, :input_html => { :value => "true"} %-->
                 <%= f.submit "purchased" %>
                 <!-- , confirm: “Continue to  mark this gift as purchased. Thank you so much!”  -->
               <% end %>
