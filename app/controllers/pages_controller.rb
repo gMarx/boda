@@ -7,6 +7,10 @@ class PagesController < ApplicationController
   end
   def accommodations
   end
+  def registry
+    # the following runs a SQL query of 'SELECT * FROM Gift' and assigns that to @gifts an instance variable
+    @gifts = Gift.all
+  end
 
   def navigation
   end

@@ -1,0 +1,15 @@
+<h2>Add a new Gift to the Registry</h2>
+
+<%= form_for @gift do |f| %>
+  <div class="field">
+    <%= f.label :name %><%= f.text_field :name %><br/>
+    <%= f.label :purchased %><%= f.check_box(:purchased) %><br/>
+    <%= f.label :url %><%= f.text_field :url %><br/>
+    <%= f.submit "Add to list" %>
+  </div>
+  <div class="actions">
+
+  </div>
+<% end %>
+<!-- My model:
+name:string purchased:boolean url:string  -->

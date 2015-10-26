@@ -16,6 +16,9 @@ Rails.application.routes.draw do
   get "welcome" => "pages#welcome"
   get "registry" => "pages#registry"
 
+  resources :gifts
+  # get "gifts" => "gifts#index"
+  # post "gifts" => "gifts#create"
 
   root 'pages#home'
 
