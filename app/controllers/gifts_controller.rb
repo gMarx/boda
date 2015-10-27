@@ -2,7 +2,7 @@ class GiftsController < ApplicationController
 
   def index
    @gifts = Gift.all
-   @gift = Gift.new
+   @new_gift = Gift.new
   end
   def create
    @gift = Gift.create(gift_params)

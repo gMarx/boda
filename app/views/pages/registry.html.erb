@@ -27,6 +27,10 @@
           <p>Come back and let us now you bought this item!</p>
         </div>
         <div>
+          <% @gifts.first.name %>
+          <p>Referencing first element</p>
+        </div>
+        <div>
           <% @gifts.each do |gift| %>
               <!-- show a gift using html elements -->
               <%= link_to gift.name, gift.url %>
