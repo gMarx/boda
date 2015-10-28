@@ -37,12 +37,12 @@
             <% if !gift.purchased? %>
 
               <%= form_for gift do |f| %>
-                <!-- %= f.text_field :purchased, :as => :hidden, :input_html => { :value => "true"} %-->
+                <%= f.hidden_field :purchased, :as => :hidden, :value => "true" %>
                 <%= f.submit "purchased" %>
                 <!-- , confirm: “Continue to  mark this gift as purchased. Thank you so much!”  -->
               <% end %>
             <% else %>
-              <%= text_field “Purchased” %>
+              <p>Gift Purchased</p>
             <% end %>
           <% end %>
         </div>
