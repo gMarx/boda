@@ -1,49 +1,43 @@
-<div class="page-header text-center container">
+<div class="page-header text-center">
   <div class="well">
     <%= render 'layouts/header' %>
     <%= render 'layouts/navbar' %>
     <div class="row">
-      <div class="col-xs-12 col-md-4">
+      <div class="col-xs-12 col-md-4 registry-gift">
         <a href="http://www1.macys.com/registry/wedding/guest/?registryId=6469354">
           <%= image_tag "macys.png", class: "med-img" %>
         </a>
       </div>
-      <div class="col-xs-12 col-md-4">
+      <div class="col-xs-12 col-md-4 registry-gift">
         <a href="#">
           <%# image_tag "macys.png", class: "med-img" %>
         </a>
       </div>
-      <div class="col-xs-12 col-md-4">
+      <div class="col-xs-12 col-md-4 registry-gift">
         <a href="#">
           <%# image_tag "macys.png", class: "med-img" %>
         </a>
       </div>
-      <div class="col-xs-12 col-md-4">
-        <a href="#">
-          <%= image_tag "https://upload.wikimedia.org/wikipedia/commons/0/07/Spices_in_an_Indian_market.jpg", class: "lg-img" %>
-        </a>
-        <div>
-          <p>More to Come, in the future.</p>
-          <p>Come back and let us now you bought this item!</p>
-        </div>
-        <div>
-          <% @gifts.first.name %>
-          <p>Help us do stuff!</p>
-        </div>
+      <div class="col-xs-12 col-md-12 registry-gift">
         <div>
           <% @gifts.each do |gift| %>
+            <div class="row col-xs-12 col-md-4 registry-gift">
               <!-- show a gift using html elements -->
-              <%= link_to gift.name, gift.url %>
-            <% if !gift.purchased? %>
-
-              <%= form_for gift do |f| %>
-                <%= f.hidden_field :purchased, :as => :hidden, :value => "true", class: "pull-left" %>
-                <%= f.submit "Mark as Purchased", class: "pull-right" %>
-                <!-- , confirm: “Continue to  mark this gift as purchased. Thank you so much!”  -->
+              <%= link_to gift.name, gift.url, class: "col-md-6 hang-left" %>
+              <% if !gift.purchased? %>
+                <%= form_for gift do |f| %>
+                  <%= f.submit "Mark as Purchased", class: "col-md-6 pull-right" %>
+                  <%= f.hidden_field :purchased, :as => :hidden, :value => "true", class: "pull-left" %>
+                  <!-- , confirm: “Continue to  mark this gift as purchased. Thank you so much!”  -->
+                <% end %>
+              <% else %>
+                <p>Gift Purchased</p>
+                <%= form_for gift do |f| %>
+                  <%= f.hidden_field :purchased, :as => :hidden, :value => "false", class: "pull-left" %>
+                  <%= f.submit "Mark as Not Purchased", class: "pull-right" %>
+                <% end %>
               <% end %>
-            <% else %>
-              <p>Gift Purchased</p>
-            <% end %>
+            </div>
           <% end %>
         </div>
       </div>
