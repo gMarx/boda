@@ -25,7 +25,7 @@
               <!-- show a gift using html elements -->
               <%= link_to gift.name, gift.url, class: "col-md-6 hang-left" %>
 
-              <%= link_to image_tag(gift.image.url(:medium), class: "col-md-6 hang-left"), gift.url %>
+              <%= link_to image_tag(gift.image.url(:thumb), class: "col-md-6 hang-left"), gift.url %>
 
               <% if !gift.purchased? %>
                 <%= form_for gift do |f| %>

@@ -1,7 +1,7 @@
 <div>
   <% @gifts.each do |gift| %>
     <!-- show a gift using html elements -->
-    <% image_tag @gift.image.url %>
+    <% image_tag @gift.image.url(:medium) %>
     <%= link_to gift.name, gift.url %>
     <% if !gift.purchased? %>
 
