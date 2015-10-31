@@ -53,9 +53,13 @@ body {
   font-family: 'Eutemia';
   src: font-url('Eutemia.ttf');
 }
+@font-face {
+  font-family: 'AlexBrush';
+  src: font-url('AlexBrush-Regular.ttf');
+}
 
-.fancy-font {
-  font-family: 'Scriptina';
+.fancy-font-title {
+  font-family: 'AlexBrush';
   font-size: 72px;
   pointer-events: none;
 }
