@@ -25,11 +25,11 @@
               <!-- show a gift using html elements -->
               <%= link_to gift.name, gift.url, class: "col-md-6 hang-left" %>
 
-              <%= link_to image_tag(gift.image.url(:thumb), class: "col-md-6 hang-left"), gift.url %>
+              <%= link_to image_tag(gift.image.url(:thumb), class: "col-md-6 pull-right"), gift.url %>
 
               <% if !gift.purchased? %>
                 <%= form_for gift do |f| %>
-                  <%= f.submit "Mark as Purchased", class: "col-md-6 pull-right" %>
+                  <%= f.submit "Mark as Purchased", class: "col-md-6 pull-left" %>
                   <%= f.hidden_field :purchased, :as => :hidden, :value => "true", class: "pull-left" %>
                   <!-- , confirm: “Continue to  mark this gift as purchased. Thank you so much!”  -->
                 <% end %>
@@ -37,7 +37,7 @@
                 <p>Gift Purchased</p>
                 <%= form_for gift do |f| %>
                   <%= f.hidden_field :purchased, :as => :hidden, :value => "false", class: "pull-left" %>
-                  <%= f.submit "Mark as Not Purchased", class: "pull-right" %>
+                  <%= f.submit "Mark as Not Purchased", class: "pull-left" %>
                 <% end %>
               <% end %>
             </div>
