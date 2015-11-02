@@ -1,24 +1,35 @@
-<div class="page-header text-center">
-  <div class="well">
+<div class="container">
+  <div class="page-header text-center well">
     <%= render 'layouts/header' %>
     <%= render 'layouts/navbar' %>
     <div class="row">
+      <div>
+        <p>What we want most for our wedding is to share the day with our family and friends together. More than anything, we consider your presence the greatest gift.<br/>
+        That said, if you really would like to offer us something, please explore the page below. We have registered with Bed Bath and Beyond, Macy's, and CB2. Click on the images to explore more.<br/>
+        </p>
+      </div>
       <div class="col-xs-12 col-md-4 registry-gift">
-        <a href="http://www1.macys.com/registry/wedding/guest/?registryId=6469354">
+        <a href="https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?registryId=542776143&eventType=Wedding&pwsurl=?mcid=EM_triggeredem_emailregistryplural__allpromos">
+          <%= image_tag "bbandbeyond.png", class: "med-img", style: "height:75px" %>
+        </a>
+      </div>
+      <div class="col-xs-12 col-md-4 registry-gift">
+        <a href="http://www.macys.com/registry/wedding/guest/?registryId=6469354">
           <%= image_tag "macys.png", class: "med-img" %>
         </a>
       </div>
       <div class="col-xs-12 col-md-4 registry-gift">
-        <a href="#">
-          <%# image_tag "macys.png", class: "med-img" %>
-        </a>
-      </div>
-      <div class="col-xs-12 col-md-4 registry-gift">
-        <a href="#">
-          <%# image_tag "macys.png", class: "med-img" %>
+        <a href="http://www.cb2.com/gift-registry/amalia-fernandez-panella-and-gary-marx/r5369393">
+          <%= image_tag "CB2.png", class: "med-img" %>
         </a>
       </div>
       <div class="col-xs-12 col-md-12 registry-gift">
+        <div>
+          <p>Aside from the "standard" registries above, which will help build our home life together, we have compiled a list of experiences and items which we would truly enjoy in the bottom section of this page.
+          Please feel free to click the links below to see the details for each item. If you choose to purchase an item, please return to this site to mark the item as 'purchased' so other guests are aware.
+          If you encounter any troubles, don't hesitate to reach out to us at <a href="mailto:amalia.and.gary@gmail.com?Subject=Wedding%20Registry" target="_top">amalia.and.gary@gmail.com</a>.
+          </p>
+        </div>
         <div>
           <% @gifts.each do |gift| %>
             <div class="row col-xs-12 col-md-4 registry-gift">
