@@ -1,7 +1,7 @@
 @import 'bootstrap';
 
 body {
-  background-image:url(image_path('Amalia&Gary_034_lowQuality.jpeg'));
+  background-image:url(image_path('Amalia&Gary_034_lowQuality2.jpeg'));
   background-size: 150%;
   background-position: center;
   background-attachment: fixed;
@@ -75,4 +75,8 @@ body {
 
 .registry-gift {
   padding-top: 15px;
+}
+
+.top-buffer {
+  margin-top: 20px;
 }
