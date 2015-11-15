@@ -10,10 +10,8 @@ body {
 .well {
 	background-color: rgba(191, 173, 152, 0.85);
 	border-color: rgba(191, 173, 152, 0.4);
-  p {
-    font-family: verdana, arial, helvetica, sans-serif;
-  }
 }
+
 .text-primary {
 	color: #1719A2;
 	font-size: 18px;
@@ -61,9 +59,33 @@ body {
   font-family: 'Allura-Regular';
   src: font-url('Allura-Regular.ttf');
 }
-.fancy-font {
+@font-face {
+  font-family: 'AdineKirnberg-R';
+  src: font-url('AdineKirnberg-Alternate.ttf');
+}
+@font-face {
+  font-family: 'TravelingTypewriter';
+  src: font-url('TravelingTypewriter.ttf');
+}
+.fancy-font-lg {
   font-family: 'Allura-Regular';
   font-size: 62px;
+  pointer-events: none;
+}
+.fancy-font-sm {
+  font-family: 'Allura-Regular';
+  font-size: 28px;
+  pointer-events: none;
+}
+
+.fancy-font-sm-1 {
+  font-family: 'AdineKirnberg-R';
+  font-size: 48px;
+  pointer-events: none;
+}
+
+.fancy-font-2 {
+  font-family: 'TravelingTypewriter';
   pointer-events: none;
 }
 

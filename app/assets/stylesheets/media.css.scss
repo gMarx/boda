@@ -2,7 +2,7 @@
 
 @media (max-width: 568px) {
   body {
-    font-size: 10px;
+    font-size: 14px;
   }
   h1 {
     font-size:12vw;
@@ -10,11 +10,11 @@
   .text-primary {
     font-size:10vw;
   }
-  p, ol, ul, td {
-    font-family: verdana, arial, helvetica, sans-serif;
+/*  p, ol, ul, td {
+    font-family: TravelingTypewriter, helvetica neue, arial, helvetica, sans-serif;
     font-size: 18px;
     line-height: 20px;
-  }
+  }*/
 
 }
 @media (min-width: 569px) and (max-width: 768px) {
