@@ -4,7 +4,7 @@
       <% if current_page? link[:path] %>
         <%= link_to link[:text], link[:path], class: "btn navbar-btn btn-info active" %>
       <% else %>
-        <%= link_to link[:text], link[:path], class: "btn navbar-btn btn-info" %>
+        <%= link_to link[:text], link[:path], class: "btn navbar-btn btn-info", id: link[:text] %>
       <% end %>
     <% end %>
   </div>
