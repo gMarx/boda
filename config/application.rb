@@ -32,5 +32,9 @@ module Wedding
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
     config.assets.precompile += %w( .svg .eot .woff .ttf)
 
+    # whitelist Optimizely to load in Editor
+    config.action_dispatch.default_headers.merge!({'X-Frame-Options' => 'ALLOW-FROM optimizely.com'})
+
+
   end
 end

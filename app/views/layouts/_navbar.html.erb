@@ -2,7 +2,7 @@
   <div class="nav nav-pills text-center">
     <% nav_links.each do |link| %>
       <% if current_page? link[:path] %>
-        <%= link_to link[:text], link[:path], class: "btn navbar-btn btn-info active" %>
+        <%= link_to link[:text], link[:path], class: "btn navbar-btn btn-info active", id: link[:description] %>
       <% else %>
         <%= link_to link[:text], link[:path], class: "btn navbar-btn btn-info", id: link[:description] %>
       <% end %>
