@@ -1,4 +1,7 @@
+// fix for bootstrap glymphicons
+@import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
 body {
   background-image:url(image_path('Amalia&Gary_034_lowQuality2.jpg'));
